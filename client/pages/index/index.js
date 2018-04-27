@@ -10,7 +10,10 @@ Page({
         takeSession: false,
         requestResult: ''
     },
-
+    onLoad: function()
+    {
+      this.login();
+    },
     // 用户登录示例
     login: function() {
         if (this.data.logged) return
